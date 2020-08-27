@@ -33,6 +33,7 @@
     "webpack-dev-server": "^3.10.1"
   },
   "dependencies": {
+    "node-uuid": "^1.4.8",
     "phaser": "^3.20.1"
   }
 }

@@ -2,18 +2,20 @@
 import Phaser from 'phaser'
 import StateMachine from 'javascript-state-machine'
 
-export default class Chest extends Phaser.Physics.Arcade.Image {
-  constructor(scene, x, y, key, frame, coins, id) {
+export default class Monster extends Phaser.Physics.Arcade.Image {
+  constructor(scene, x, y, key, frame, id, health, maxHealth) {
     super(scene, x, y, key, frame)
 
     this.scene = scene
-    this.coins = coins
     this.id = id
+    this.health = health
+    this.maxHealth = maxHealth
 
     this.scene.physics.world.enable(this)
-    this.scene.add.existing(this)
-
+    this.setImmovable()
     this.setScale(2)
+    this.setCollideWorldBounds(true)
+    this.scene.add.existing(this)
   }
 
   makeActive() {

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="10" height="8" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="5">
+ <editorsettings>
+  <export target="../assets/level2/large_level.json" format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" name="background" tilewidth="32" tileheight="32" tilecount="1504" columns="32">
+  <image source="../assets/level/background.png" width="1024" height="1504"/>
+ </tileset>
+ <layer id="1" name="background" width="10" height="8">
+  <data encoding="csv">
+298,298,298,298,298,298,298,298,298,298,
+298,298,298,298,298,298,298,298,298,298,
+298,298,298,298,298,298,298,298,298,298,
+298,298,298,298,298,298,298,298,298,298,
+298,298,298,298,298,298,298,298,298,298,
+298,298,298,298,298,298,298,298,298,298,
+298,298,298,298,298,298,298,298,298,298,
+298,298,298,298,298,298,298,298,298,298
+</data>
+ </layer>
+ <layer id="3" name="blocked" width="10" height="8">
+  <data encoding="csv">
+0,844,0,0,1475,1475,0,0,0,0,
+0,0,0,0,1475,1475,0,0,0,844,
+0,0,0,0,1475,1475,0,0,0,0,
+0,0,0,0,1475,1475,0,0,0,0,
+0,0,0,0,1475,1475,0,0,0,0,
+0,0,0,0,1475,1475,0,0,0,0,
+0,0,0,781,1475,1475,781,0,0,0,
+0,0,0,0,1475,1475,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="4" name="Object Layer 1">
+  <object id="2" gid="86" x="37" y="111" width="32" height="32"/>
+  <object id="3" gid="86" x="250" y="135" width="32" height="32">
+   <properties>
+    <property name="name" value="chest"/>
+   </properties>
+  </object>
+  <object id="4" gid="86" x="38" y="-93" width="32" height="32"/>
+ </objectgroup>
+</map>
